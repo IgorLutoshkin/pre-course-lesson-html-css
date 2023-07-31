@@ -25,5 +25,20 @@ section {
   height: 800px;
   background: #fff;
   box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
-	padding: 60px 0 80px;
+  padding: 60px 0 80px;
+}
+/* card-left */
+.selected-preview {
+  background: #fff;
+  box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
+}
+
+.preview {
+  width: 80px;
+  height: 80px;
+}
+
+.product-image-block {
+  border-right: 2px solid rgba(20, 20, 20, 0.15);
+  width: 540px;
 }
