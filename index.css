@@ -20,13 +20,16 @@ body {
 section {
   background-color: #eff2f9;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* card */
 .card {
   display: flex;
   width: 1170px;
-  height: 800px;
+  min-height: 800px;
   background: #fff;
   box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
   padding: 60px 0 80px;
@@ -51,13 +54,13 @@ section {
   border-right: 2px solid rgba(20, 20, 20, 0.15);
   min-width: 540px;
 }
-.main-img-wrap{
+.main-img-wrap {
   display: flex;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
 }
-.prewiev-wrap{
+.prewiev-wrap {
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -98,12 +101,18 @@ section {
   font-weight: 400;
   letter-spacing: 0.16px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .colors {
   margin-top: 65px;
 }
 .colors ul {
   margin-top: 23px;
+}
+.color-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .circle {
   width: 16px;
@@ -132,16 +141,23 @@ section {
   height: 30px;
   box-shadow: 4px 8px 16px rgba(81, 91, 117, 0.25);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .price-wrap {
+  display: flex;
   margin-top: 72px;
+}
+.price-wrap > div {
+  flex-grow: 1;
 }
 
 .select {
   width: 83px;
   color: rgba(20, 20, 20, 0.8);
-  font-family: Rubik, sans-serif;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.2px;
