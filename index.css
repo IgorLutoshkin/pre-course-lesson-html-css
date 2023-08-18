@@ -24,6 +24,7 @@ section {
 
 /* card */
 .card {
+  display: flex;
   width: 1170px;
   height: 800px;
   background: #fff;
@@ -39,11 +40,27 @@ section {
 .preview {
   width: 80px;
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-image-block {
+  display: flex;
+  flex-direction: column;
   border-right: 2px solid rgba(20, 20, 20, 0.15);
-  width: 540px;
+  min-width: 540px;
+}
+.main-img-wrap{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.prewiev-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 
 /* card-right */
@@ -71,7 +88,7 @@ section {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.18px;
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .title {
@@ -82,11 +99,11 @@ section {
   letter-spacing: 0.16px;
   text-transform: uppercase;
 }
-.colors{
-	margin-top: 65px;
+.colors {
+  margin-top: 65px;
 }
-.colors ul{
-	margin-top: 23px;
+.colors ul {
+  margin-top: 23px;
 }
 .circle {
   width: 16px;
@@ -117,8 +134,8 @@ section {
   border-radius: 50%;
 }
 
-.price-wrap{
-	margin-top: 72px;
+.price-wrap {
+  margin-top: 72px;
 }
 
 .select {
@@ -152,7 +169,8 @@ section {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.18px;
-	background-color: #141414;
-	border: none;
-	outline: none;margin-top: 75px;
+  background-color: #141414;
+  border: none;
+  outline: none;
+  margin-top: 75px;
 }
