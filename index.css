@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ /*  outline: 1px solid red; */ /* для просмотра границ всех элементов */
 }
 ul {
   list-style: none;
@@ -11,9 +12,10 @@ ul {
 /* fonts */
 html,
 body {
-  font-family: "Lato", sans-serif;
-  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  line-height: normal;
   font-family: "Rubik", sans-serif;
+  min-width: 375px;
 }
 
 /* section */
@@ -76,6 +78,7 @@ section {
   padding: 0 60px;
 }
 .main-title {
+  margin-bottom: 5px;
   color: rgba(20, 20, 20, 0.9);
   font-family: Montserrat, sans-serif;
   font-size: 38px;
@@ -222,6 +225,7 @@ section {
 @media screen and (max-width: 768px) {
   .card {
     margin: 40px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     width: 690px;
@@ -229,14 +233,42 @@ section {
   }
   .product-image-block {
     border-right: none;
-    border-bottom: 2px  solid rgba(20, 20, 20, 0.15);
-    margin: 0 60px; /* отступ */
-    
+    border-bottom: 2px solid rgba(20, 20, 20, 0.15);
   }
-  .preview-wrap{
+  .preview-wrap {
     margin: 60px 0 70px;
   }
-  .product-info-block{
+  .product-info-block {
+    padding: 0;
     padding-top: 60px;
+  }
+}
+
+/* media 664-375 */
+
+@media screen and (max-width: 664px) {
+  .card {
+    padding:60px 20px 0 ;
+    margin: 20px 15px 35px;
+    min-width: 345px; /* чтобы не было скролла лево-право */
+  }
+  .product-image-block {
+    min-width: auto;
+  }
+  .main-img {
+    width: 250px;
+  }
+  .main-title {
+    font-size: 34px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .colors {
+    margin-top: 55px;
   }
 }
