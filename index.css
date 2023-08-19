@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- /*  outline: 1px solid red; */ /* для просмотра границ всех элементов */
+  /*  outline: 1px solid red; */ /* для просмотра границ всех элементов */
 }
 ul {
   list-style: none;
@@ -229,7 +229,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 690px;
-    height: 1382px;
+    min-height: 1382px;
   }
   .product-image-block {
     border-right: none;
@@ -248,8 +248,9 @@ section {
 
 @media screen and (max-width: 664px) {
   .card {
-    padding:60px 20px 0 ;
+    padding: 60px 20px;
     margin: 20px 15px 35px;
+    min-height: auto;
     min-width: 345px; /* чтобы не было скролла лево-право */
   }
   .product-image-block {
